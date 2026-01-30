@@ -105,7 +105,7 @@ By trapping attackers in a fake SSH environment, the system safely analyzes mali
 
 ## 👤 Author
 
-**Yashawanth K**
+**K Yashawanth **
 Computer Science Engineering Student
 Aspiring Software Developer / Python Developer
 
