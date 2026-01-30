@@ -1,0 +1,47 @@
+Session: 127.0.0.1_2026-01-08
+Source IP: 127.0.0.1
+First seen: 2026-01-08T12:39:27.985367
+Events: 23
+Counts: {'NEW_CONNECTION': 5, 'LOGIN_ATTEMPT': 11, 'NO_CHANNEL': 3, 'LOGIN_SUCCESS': 2, 'NEW_SSH_SESSION': 2}
+Inferred intent: Unknown
+Skill estimate: Unknown
+Score: 23  Confidence: 95%
+
+Top observed commands (first 25):
+  - Port: 60594
+  - Password: dddd
+  - Password: wwww
+  - Password: dddd
+  - No channel opened (client disconnected)
+  - Port: 60598
+  - Password: passs
+  - Password: wwww
+  - Password: dddd
+  - No channel opened (client disconnected)
+  - Port: 60600
+  - Password: password
+  - Password: dd
+  - Password: d
+  - No channel opened (client disconnected)
+  - Port: 60602
+  - Password: password
+  - Port: 54097
+  - Password: password
+
+Recommended actions:
+  * MEDIUM: Review session, keep evidence, consider blocking.
+
+--- AUGMENTED ANALYST NOTES ---
+
+Summary: Observed ~23 events. Likely intent: Unknown. Confidence: 95%. Top behaviors: NEW_CONNECTION, LOGIN_ATTEMPT, NO_CHANNEL, LOGIN_SUCCESS.
+
+Mitigations / Next steps:
+1) Preserve evidence: copy CSV, JSON profiles and attacker files to an isolated analysis host.
+2) Add detection rules for observed suspicious commands and monitor for repeat connections.
+3) Use the command timeline and attacker files to create IoC signatures and tune IDS rules.
+
+Evidence / quick IoCs:
+  - cmd:Port: 60594
+  - cmd:Password: dddd
+  - cmd:Password: wwww
+  - first_seen:2026-01-08T12:39:27.985367
