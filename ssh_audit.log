@@ -1,0 +1,154 @@
+2025-12-03 11:08:20,907 - INFO - NEW_CONNECTION - IP: 127.0.0.1:55769
+2025-12-03 11:08:21,072 - INFO - HOST_KEY_GENERATED - New RSA host key generated
+2025-12-03 11:08:21,075 - INFO - Connected (version 2.0, client OpenSSH_for_Windows_9.5)
+2025-12-03 11:08:24,490 - INFO - Auth rejected (none).
+2025-12-03 11:08:29,919 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: password - Attempt: 1
+2025-12-03 11:08:29,922 - INFO - LOGIN_SUCCESS - IP: 127.0.0.1 - Username: admin - Password: password
+2025-12-03 11:08:29,924 - INFO - Auth granted (password).
+2025-12-03 11:08:29,928 - INFO - NEW_SSH_SESSION - IP: 127.0.0.1
+2025-12-03 11:08:29,940 - INFO - SESSION_START - IP: 127.0.0.1 - SessionID: 127.0.0.1_1764740309 - Username: admin - Password: password
+2025-12-03 11:08:32,470 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: l
+2025-12-03 11:08:32,977 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: s
+2025-12-03 11:08:33,280 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:08:33,283 - INFO - COMMAND - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - User: admin - Command: ls - Status: EXECUTED - Root: False
+2025-12-03 11:08:36,873 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: w
+2025-12-03 11:08:36,978 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: h
+2025-12-03 11:08:37,130 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: o
+2025-12-03 11:08:37,938 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: a
+2025-12-03 11:08:38,242 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: m
+2025-12-03 11:08:38,950 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:08:40,011 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:08:40,012 - INFO - COMMAND - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - User: admin - Command: whoami - Status: EXECUTED - Root: False
+2025-12-03 11:08:43,255 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: e
+2025-12-03 11:08:43,659 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: x
+2025-12-03 11:08:43,761 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:08:44,065 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: t
+2025-12-03 11:08:44,421 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:08:44,421 - INFO - COMMAND - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - User: admin - Command: exit - Status: EXECUTED - Root: False
+2025-12-03 11:08:44,424 - INFO - SESSION_END - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Duration: 14.48s - Commands: 3 - RootAccess: False - FilesCreated: 0
+2025-12-03 11:08:44,438 - ERROR - Socket exception: An existing connection was forcibly closed by the remote host (10054)
+2025-12-03 11:08:44,440 - INFO - ATTACKER_ANALYSIS - SessionID: 127.0.0.1_1764740309 - IP: 127.0.0.1 - Summary: Observed session starting 2025-12-03T05:38:44.439941 from 127.0.0.1. Activity summary: {'UNKNOWN': 3}. Inferred intent: Low-skill / reconnaissance. Estimated skill: Unknown. Enrichment: none. Mapped MITRE techniques: []. Confidence: 18%.
+2025-12-03 11:08:44,441 - INFO - ATTACKER_PROFILE - {'source_ip': '127.0.0.1', 'first_seen': '2025-12-03T05:38:44.439941', 'event_count': 3, 'categories': {'UNKNOWN': 3}, 'score': 3, 'intent': 'Low-skill / reconnaissance', 'skill_estimate': 'Unknown', 'mitre': [], 'geo': {}, 'confidence': 18, 'events': [{'timestamp': '2025-12-03T05:38:44.439941', 'category': 'UNKNOWN', 'pattern': None, 'command': 'ls', 'severity': 1}, {'timestamp': '2025-12-03T05:38:44.440027', 'category': 'UNKNOWN', 'pattern': None, 'command': 'whoami', 'severity': 1}, {'timestamp': '2025-12-03T05:38:44.440045', 'category': 'UNKNOWN', 'pattern': None, 'command': 'exit', 'severity': 1}]}
+2025-12-03 11:15:49,171 - INFO - NEW_CONNECTION - IP: 127.0.0.1:52442
+2025-12-03 11:15:49,315 - INFO - Connected (version 2.0, client OpenSSH_for_Windows_9.5)
+2025-12-03 11:15:49,348 - INFO - Auth rejected (none).
+2025-12-03 11:15:53,225 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: passw - Attempt: 1
+2025-12-03 11:15:53,227 - INFO - Auth rejected (password).
+2025-12-03 11:15:55,123 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: ll - Attempt: 2
+2025-12-03 11:15:55,125 - INFO - Auth rejected (password).
+2025-12-03 11:15:56,645 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: pass - Attempt: 3
+2025-12-03 11:15:56,647 - INFO - Auth rejected (password).
+2025-12-03 11:15:56,651 - ERROR - Socket exception: An existing connection was forcibly closed by the remote host (10054)
+2025-12-03 11:15:56,653 - INFO - NO_CHANNEL - client 127.0.0.1 disconnected before session established
+2025-12-03 11:16:00,060 - INFO - NEW_CONNECTION - IP: 127.0.0.1:52444
+2025-12-03 11:16:00,165 - INFO - Connected (version 2.0, client OpenSSH_for_Windows_9.5)
+2025-12-03 11:16:00,178 - INFO - Auth rejected (none).
+2025-12-03 11:16:03,661 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: password - Attempt: 1
+2025-12-03 11:16:03,663 - INFO - LOGIN_SUCCESS - IP: 127.0.0.1 - Username: admin - Password: password
+2025-12-03 11:16:03,675 - INFO - Auth granted (password).
+2025-12-03 11:16:03,679 - INFO - NEW_SSH_SESSION - IP: 127.0.0.1
+2025-12-03 11:16:03,682 - INFO - SESSION_START - IP: 127.0.0.1 - SessionID: 127.0.0.1_1764740763 - Username: admin - Password: password
+2025-12-03 11:16:07,017 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: l
+2025-12-03 11:16:07,219 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: s
+2025-12-03 11:16:07,472 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:07,473 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: ls - Status: EXECUTED - Root: False
+2025-12-03 11:16:08,689 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: w
+2025-12-03 11:16:08,892 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: h
+2025-12-03 11:16:09,094 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: o
+2025-12-03 11:16:10,005 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: a
+2025-12-03 11:16:10,157 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: m
+2025-12-03 11:16:10,511 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:16:10,917 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:10,919 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: whoami - Status: EXECUTED - Root: False
+2025-12-03 11:16:13,399 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: c
+2025-12-03 11:16:13,702 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: a
+2025-12-03 11:16:13,854 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: t
+2025-12-03 11:16:15,067 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:15,068 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: cat - Status: EXECUTED - Root: False
+2025-12-03 11:16:17,745 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: c
+2025-12-03 11:16:17,948 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:18,708 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key:  
+2025-12-03 11:16:19,063 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: /
+2025-12-03 11:16:19,317 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:19,318 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: cd / - Status: EXECUTED - Root: False
+2025-12-03 11:16:22,197 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:16:22,349 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:22,553 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:22,553 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: id - Status: EXECUTED - Root: False
+2025-12-03 11:16:26,744 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: p
+2025-12-03 11:16:26,998 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: w
+2025-12-03 11:16:27,250 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:27,461 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:27,462 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: pwd - Status: EXECUTED - Root: False
+2025-12-03 11:16:30,088 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: e
+2025-12-03 11:16:30,443 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: c
+2025-12-03 11:16:32,515 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:32,516 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: ec - Status: EXECUTED - Root: False
+2025-12-03 11:16:33,276 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: e
+2025-12-03 11:16:33,530 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: c
+2025-12-03 11:16:33,732 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: h
+2025-12-03 11:16:33,936 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: o
+2025-12-03 11:16:34,240 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:34,241 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: echo - Status: EXECUTED - Root: False
+2025-12-03 11:16:36,870 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: t
+2025-12-03 11:16:37,073 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: o
+2025-12-03 11:16:37,276 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: u
+2025-12-03 11:16:37,530 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: c
+2025-12-03 11:16:37,682 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: h
+2025-12-03 11:16:38,087 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:38,088 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: touch - Status: EXECUTED - Root: False
+2025-12-03 11:16:38,092 - INFO - ATTACKER_FILE_CREATED - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - File: file_1764740798.txt - Saved as: 127.0.0.1_1764740763_file_1764740798.txt
+2025-12-03 11:16:41,982 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: m
+2025-12-03 11:16:42,690 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: k
+2025-12-03 11:16:42,893 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:43,096 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:16:43,299 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: r
+2025-12-03 11:16:44,463 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key:  
+2025-12-03 11:16:46,685 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:46,939 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: x
+2025-12-03 11:16:47,597 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: d
+2025-12-03 11:16:47,800 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: .
+2025-12-03 11:16:48,306 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: p
+2025-12-03 11:16:48,663 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: y
+2025-12-03 11:16:48,866 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:48,867 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: mkdir dxd.py - Status: EXECUTED - Root: False
+2025-12-03 11:16:48,871 - INFO - ATTACKER_FILE_CREATED - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - File: dxd.py - Saved as: 127.0.0.1_1764740763_dxd.py
+2025-12-03 11:16:50,697 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: l
+2025-12-03 11:16:50,800 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: s
+2025-12-03 11:16:51,002 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:51,003 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: ls - Status: EXECUTED - Root: False
+2025-12-03 11:16:56,911 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: p
+2025-12-03 11:16:57,064 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: s
+2025-12-03 11:16:57,317 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:16:57,319 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: ps - Status: EXECUTED - Root: False
+2025-12-03 11:17:00,558 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: h
+2025-12-03 11:17:00,761 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:17:00,963 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: s
+2025-12-03 11:17:01,519 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: t
+2025-12-03 11:17:01,621 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: o
+2025-12-03 11:17:01,773 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: r
+2025-12-03 11:17:01,976 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: y
+2025-12-03 11:17:02,332 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:17:02,333 - INFO - COMMAND - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - User: admin - Command: history - Status: EXECUTED - Root: False
+2025-12-03 11:17:32,346 - WARNING - SESSION_TIMEOUT - IP: 127.0.0.1 - SessionID: 127.0.0.1_1764740763
+2025-12-03 11:17:32,348 - INFO - SESSION_END - SessionID: 127.0.0.1_1764740763 - IP: 127.0.0.1 - Duration: 88.67s - Commands: 13 - RootAccess: False - FilesCreated: 2
+2025-12-03 11:17:47,645 - INFO - NEW_CONNECTION - IP: 127.0.0.1:53427
+2025-12-03 11:17:47,741 - INFO - Connected (version 2.0, client OpenSSH_for_Windows_9.5)
+2025-12-03 11:17:47,751 - INFO - Auth rejected (none).
+2025-12-03 11:17:49,776 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: ps - Attempt: 1
+2025-12-03 11:17:49,778 - INFO - Auth rejected (password).
+2025-12-03 11:17:51,983 - INFO - LOGIN_ATTEMPT - IP: 127.0.0.1 - Username: admin - Password: password - Attempt: 2
+2025-12-03 11:17:51,986 - INFO - LOGIN_SUCCESS - IP: 127.0.0.1 - Username: admin - Password: password
+2025-12-03 11:17:51,988 - INFO - Auth granted (password).
+2025-12-03 11:17:51,991 - INFO - NEW_SSH_SESSION - IP: 127.0.0.1
+2025-12-03 11:17:51,994 - INFO - SESSION_START - IP: 127.0.0.1 - SessionID: 127.0.0.1_1764740871 - Username: admin - Password: password
+2025-12-03 11:17:52,552 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Context: command_input - Key: e
+2025-12-03 11:17:52,806 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Context: command_input - Key: x
+2025-12-03 11:17:53,008 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Context: command_input - Key: i
+2025-12-03 11:17:53,161 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Context: command_input - Key: t
+2025-12-03 11:17:53,313 - INFO - KEYSTROKE - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Context: command_input - Key: [ENTER]
+2025-12-03 11:17:53,315 - INFO - COMMAND - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - User: admin - Command: exit - Status: EXECUTED - Root: False
+2025-12-03 11:17:53,318 - INFO - SESSION_END - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Duration: 1.32s - Commands: 1 - RootAccess: False - FilesCreated: 0
+2025-12-03 11:17:53,323 - INFO - ATTACKER_ANALYSIS - SessionID: 127.0.0.1_1764740871 - IP: 127.0.0.1 - Summary: Observed session starting 2025-12-03T05:47:53.323016 from 127.0.0.1. Activity summary: {'UNKNOWN': 1}. Inferred intent: Low-skill / reconnaissance. Estimated skill: Unknown. Enrichment: none. Mapped MITRE techniques: []. Confidence: 6%.
+2025-12-03 11:17:53,324 - INFO - ATTACKER_PROFILE - {'source_ip': '127.0.0.1', 'first_seen': '2025-12-03T05:47:53.323016', 'event_count': 1, 'categories': {'UNKNOWN': 1}, 'score': 1, 'intent': 'Low-skill / reconnaissance', 'skill_estimate': 'Unknown', 'mitre': [], 'geo': {}, 'confidence': 6, 'events': [{'timestamp': '2025-12-03T05:47:53.323016', 'category': 'UNKNOWN', 'pattern': None, 'command': 'exit', 'severity': 1}]}
+2025-12-03 11:17:53,324 - INFO - Disconnect (code 11): disconnected by user
